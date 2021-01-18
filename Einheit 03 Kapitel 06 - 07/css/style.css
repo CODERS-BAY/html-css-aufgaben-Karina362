@@ -101,8 +101,11 @@ li{
 
 main.storys{
     display: flex;
-    max-width: 62 rem;
+    /* max-width: 62 rem; */
     margin: auto;
 }
 
 
+.storys article {
+    flex-basis: 50%;
+}
