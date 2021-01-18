@@ -1,0 +1,92 @@
+h1{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 200%;
+}
+nav{
+    text-align: center;
+    word-spacing: 80px;
+    margin-top: 3%;   
+}
+
+nav a{
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 180%;
+    color: black;    
+}
+section.welcome{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 130%;
+    padding-top: 1%;
+
+}
+
+section.säugetier{
+    border: 3px solid black;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 130%;
+}
+section.insekten{
+    border: 3px solid black;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 130%;
+}
+section.fische{
+    border: 3px solid black;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 130%;
+}
+
+dt{
+    text-align: center;
+}
+
+dd{
+    text-align: center;  
+}
+
+
+article.animals{
+    max-width: 62 rem;
+    margin: auto;
+    display: flex;
+   
+}
+
+section.video{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 130%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+
+}
+
+footer{
+    text-align: center;
+}
+
+
+table{
+   
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 130%;
+    display: inline-block;
+    border: 2px solid black;
+}
+section.tabelle{
+    text-align: center;
+    padding-top: 2%;
+}
+p.tiere{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 130%;
+    padding-top: 3%;
+}
+

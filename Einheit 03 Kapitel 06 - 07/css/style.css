@@ -1,0 +1,108 @@
+h1{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 200%;
+}
+nav{
+    text-align: center;
+    word-spacing: 80px;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    background-color: rgb(136, 155, 190);
+    
+}
+p{
+    
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 150%; 
+    padding-top: 3%; 
+    padding-right: 20%;
+    padding-left: 20%;
+}
+p.audioText{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 150%; 
+    color: darkblue;
+    padding-top: 3%; 
+    padding-right: 20%;
+    padding-left: 20%;
+
+}
+
+/*section.story{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 130%; 
+    padding-top: 3%; 
+    margin-right: 20%;
+    text-align: center;
+   
+    
+
+}*/
+
+a{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 180%;
+    text-decoration: none;
+    color: black;
+}
+article{
+  
+    text-align: center;  
+}
+
+
+section.pic{
+    padding-top: 3%;
+}
+
+footer {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 80%; 
+    padding-bottom: 3%;
+    background-color: rgb(136, 155, 190);
+}
+div.audio{
+    padding-top: 3%;
+    padding-bottom: 3%
+}
+
+body{
+    background-color: rgb(220, 234, 243);
+}
+
+ul.liste{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 150%; 
+    display: inline-block;
+}
+
+ol.tips{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 150%; 
+    display: inline-block;
+}
+
+li{
+    text-align: left;
+}
+/*section.tips{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 150%; 
+    margin-right: 50%;
+   
+      
+}*/
+
+
+main.storys{
+    display: flex;
+    max-width: 62 rem;
+    margin: auto;
+}
+
+
