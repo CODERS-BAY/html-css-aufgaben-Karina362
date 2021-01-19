@@ -18,7 +18,59 @@
             </nav>
         </header>
         <main>
+            <form action="kontakt.html" method="POST">
+                <fieldset>
+                    <legend>Formular für Patenschaften</legend>
+                <div class="flex">
+                    <label for="vorname">Vorname</label>
+                    <input type="text" name="vorname" id="vorname">
+                </div>
+                <div class="flex">
+                    <label for="nachname">Nachname</label>
+                    <input type="text" name="nachname" id="nachname">
+                </div>
+                <div class="flex">
+                    <label for="emailadresse">E-mail</label>
+                    <input type="text" name="emailadresse" id="emailadresse">
+                </div>
+                <div class="flex">
+                    <label for="passwort">Passwort</label>
+                    <input type="password" name="passwort" id="passwort">
+                </div>
+                
+                
+                
+                <div class="flex">
+                    <label for="lieblingstier">Lieblingstier</label>
+                    <select name="lieblingstier" id="lieblingstier">
+                        <option value="1">Erdmännchen</option>
+                        <option value="2">Tiger</option>
+                        <option value="3">Seemöwe</option>
+                        <option value="4">Flunder</option>
+                    </select>
 
+                </div>
+                <div class="flex">
+                    <label for="adoption">Adoption</label>
+                    <ul>
+                       <li> <input type="radio" name="adoption" >3 Monate</li>
+                        <li><input type="radio" name="adoption" >6 Monate</li>
+                        <li><input type="radio" name="adoption" >1 Jahr</li>
+
+                    </ul>
+                </div>
+            
+            <div class="flex">
+            <label for= "kommentar">Kommentar</label>
+            <textarea rows="5" cols="20" name="kommentar" id="kommentar"></textarea>
+            </div>
+            <button type="submit">Absenden</button>
+            <button type="reset">Reset Formular</button>
+            <button type="button">Button</button>
+
+            
+            </form>
+        </fieldset>
         </main>
         <footer>
             

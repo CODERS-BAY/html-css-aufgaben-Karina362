@@ -36,7 +36,7 @@ section.insekten{
     font-family: 'Times New Roman', Times, serif;
     font-size: 130%;
 }
-section.fische{
+.fische{
     
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
@@ -53,14 +53,14 @@ dd{
 }
 
 
-article.animals{
+.animals{
    justify-content: space-around;
     margin: auto;
     display: flex;
    
 }
 
-section.video{
+.video{
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     font-size: 130%;
@@ -77,19 +77,34 @@ footer{
 table{
    
     font-family: 'Times New Roman', Times, serif;
-    font-size: 130%;
+    font-size: 150%;
     display: inline-block;
-    border: 2px solid black;
+   
+    
 }
-section.tabelle{
+th,td{
+    border: 1px solid black;
+    padding: 25px;
+}
+
+.tabelle{
     text-align: center;
     padding-top: 2%;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
-p.tiere{
+.tiere{
     text-align: center;
+    color:black;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 130%;
+    font-size: 150%;
     padding-top: 3%;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /*Hintergrundbild
@@ -101,6 +116,52 @@ p.tiere{
   height: 100vh;
   width: 100vw;
   margin: 0;
-  ;
+  opacity: 0.300;
+  
 }
+.flex{
+    justify-content: space-around;
+    margin: auto;
+    display: flex;
+    width: 50%;
+    padding-top: 3%;
+    
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+button{
+    
+    margin-top: 3%;
+    justify-content: space-around;
+
+}
+
+form{
+    display: relative;
+    margin-left: 20%;
+    margin-right:20%;
+    width: auto;
+    padding-top: 3%;       
+}
+
+
+.flex > *{
+    flex-basis: 50%;
+}
+
+
+
+label{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 130%;
+}
+
+
+
+
+
+
 
