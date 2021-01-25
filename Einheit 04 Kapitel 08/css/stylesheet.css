@@ -1,0 +1,171 @@
+h1{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 200%;
+}
+nav{
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3%;   
+}
+
+nav a{
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 180%;
+    color: black;    
+}
+section.welcome{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 130%;
+    padding-top: 1%;
+
+}
+
+section.säugetier{
+    
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 130%;
+}
+section.insekten{
+    
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 130%;
+}
+.fische{
+    
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 130%;
+}
+
+dt{
+    text-align: center;
+}
+
+dd{
+    text-align: center; 
+    
+}
+
+
+.animals{
+   justify-content: space-around;
+    margin: auto;
+    display: flex;
+   
+}
+
+.video{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 130%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+
+}
+
+footer{
+    text-align: center;
+}
+
+
+table{
+   
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 150%;
+    display: inline-block;
+   
+    
+}
+th,td{
+    border: 1px solid black;
+    padding: 25px;
+}
+
+.tabelle{
+    text-align: center;
+    width: 100%;
+    padding-top: 2%;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.tiere{
+    text-align: center;
+    color:black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 150%;
+    padding-top: 3%;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*Hintergrundbild
+/---------------*/
+.background img{
+  background-position: center;
+  background-image: url(bilder/hintergrund.png);
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  opacity: 0.300;
+  
+}
+.flex{
+    justify-content: space-around;
+    margin: auto;
+    display: flex;
+    width: 50%;
+    padding: 3%;
+    
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+div.btn {
+    display: flex;
+    padding: 2%;
+    justify-content: space-around;
+    background-color: lemonchiffon;
+}
+
+form{
+    display: relative;
+    margin-left: 20%;
+    margin-right:20%;
+    width: auto;
+    padding-top: 3%;       
+}
+
+
+.flex > *{
+    flex-basis: 50%;
+}
+
+
+
+label{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 130%;
+}
+fieldset{
+    background-color: lavenderblush;
+}
+
+
+
+
+
+
+

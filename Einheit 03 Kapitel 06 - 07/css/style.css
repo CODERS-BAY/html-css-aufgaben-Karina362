@@ -29,16 +29,13 @@ p.audioText{
 
 }
 
-section.story{
+/*section.story{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 130%; 
     padding-top: 3%; 
     margin-right: 20%;
     text-align: center;
-   
-    
-
-}
+}*/
 
 a{
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -73,24 +70,32 @@ body{
 }
 
 ul.liste{
-    text-align: ceneter;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 150%; 
-}
-section.tips{
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 150%; 
-    margin-right: 50%;
-   
-      
+    display: inline-block;
 }
 
+ol.tips{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 150%; 
+    display: inline-block;
+}
+
+li{
+    text-align: left;
+}
 
 main.storys{
     display: flex;
-    max-width: 62 rem;
+    /* max-width: 62 rem; */
     margin: auto;
 }
 
+
+
+.storys article {
+    flex-basis: 50%;
+}
 
