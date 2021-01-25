@@ -37,8 +37,24 @@
                     <label for="passwort">Passwort</label>
                     <input type="password" name="passwort" id="passwort">
                 </div>
-                
-                
+                <div class="flex">
+                    <label for="besuchstag">Besuchstag</label>
+                    <input type="text" name="besuchstag" id="besuchstag">
+                </div>
+                <div class="flex">
+                    <label for="besuchszeit">Besuchszeit</label>
+                    <input type="text" name="besuchszeit" id="besuchszeit">
+                </div>
+                <div class="flex">
+                    <label for="hat es gefallen">Hat es gefallen</label>
+                    <input type="text" name="hat es gefallen" id="hat es gefallen">
+                </div>
+                <div class="flex">
+                    <label for="weiterempfehlung">Weiterempfehlung</label>
+                    <input type="text" name="weiterempfehlung" id="weiterempfehlung">
+                </div>
+            
+               
                 
                 <div class="flex">
                     <label for="lieblingstier">Lieblingstier</label>
@@ -65,14 +81,32 @@
             <textarea rows="5" cols="20" name="kommentar" id="kommentar"></textarea>
             </div>
 
+            <div class="flex">
+                <label for="besucherinfo">Besucherinfo</label>
+                <select name="besucherinfo" id="besucherinfo">
+                    <option value="1">Familienausflug</option>
+                    <option value="2">Allein unterwegs</option>
+                    <option value="3">Gruppenausflug</option>
+                    <option value="4">Ausflug mit Freunden</option>
+                    <option value="5">was anderes...</option>
+                </select>
+               
+        
+            </fieldset>
+         </form>
+          
+         <div class="btn">
             <button type="submit">Absenden</button>
             <button type="reset">Reset Formular</button>
             <button type="button">Button</button>
-         </form>
-        </fieldset>
+        </div>
+         
+        
         </main>
+        <hr>
         <footer>
-            
+            <p>Datenschutz</p>
+            <p>Impressum</p>
         </footer>
     </body>
 </html>

@@ -125,7 +125,7 @@ th,td{
     margin: auto;
     display: flex;
     width: 50%;
-    padding-top: 3%;
+    padding: 3%;
     
 }
 ul{
@@ -133,12 +133,11 @@ ul{
     padding: 0;
     margin: 0;
 }
-button{
-    
-    margin-top: 3%;
+div.btn {
+    display: flex;
+    padding: 2%;
     justify-content: space-around;
     background-color: lemonchiffon;
-
 }
 
 form{
