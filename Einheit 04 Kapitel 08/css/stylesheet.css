@@ -89,9 +89,10 @@ th,td{
 
 .tabelle{
     text-align: center;
+    width: 100%;
     padding-top: 2%;
     position: absolute;
-    top: 60%;
+    top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -102,7 +103,7 @@ th,td{
     font-size: 150%;
     padding-top: 3%;
     position: absolute;
-    top: 20%;
+    top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -136,6 +137,7 @@ button{
     
     margin-top: 3%;
     justify-content: space-around;
+    background-color: lemonchiffon;
 
 }
 
@@ -157,6 +159,9 @@ form{
 label{
     font-family: 'Times New Roman', Times, serif;
     font-size: 130%;
+}
+fieldset{
+    background-color: lavenderblush;
 }
 
 
