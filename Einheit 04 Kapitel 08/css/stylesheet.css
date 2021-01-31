@@ -1,13 +1,27 @@
+body{
+    font-family: 'Cinzel', serif;
+    font-family: 'Kalam', cursive;
+}
+
 h1{
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     font-size: 200%;
+}
+
+h1::first-letter{
+    font-size: 220%;
 }
 nav{
     text-align: center;
     display: flex;
     justify-content: space-around;
     margin-top: 3%;   
+}
+nav a::first-letter{
+    font-size: 200%;
+    font-family: 'Cinzel', serif;
+    
 }
 
 nav a{
@@ -23,6 +37,15 @@ section.welcome{
     padding-top: 1%;
 
 }
+.welcome p::first-letter{
+    font-size: 200%;
+    color: rgb(201, 73, 23);
+}
+.welcome p::first-line{
+   color: lightsalmon;
+   font-family: 'Kalam', cursive;
+   font-size: 150%;
+}
 
 section.säugetier{
     
@@ -30,11 +53,21 @@ section.säugetier{
     font-family: 'Times New Roman', Times, serif;
     font-size: 130%;
 }
+.säugetier dt::first-letter{
+    font-size: 150%;
+    color: lightcoral;
+    font-family: 'Kalam', cursive;
+}
 section.insekten{
     
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     font-size: 130%;
+}
+.insekten dt::first-letter{
+    font-size: 150%;
+    color: lightcoral;
+    font-family: 'Kalam', cursive;
 }
 .fische{
     
@@ -42,22 +75,25 @@ section.insekten{
     font-family: 'Times New Roman', Times, serif;
     font-size: 130%;
 }
+.fische dt::first-letter{
+    font-size: 150%;
+    color: lightcoral;
+    font-family: 'Kalam', cursive;
+}
 
 dt{
     text-align: center;
 }
 
 dd{
+    
     text-align: center; 
     
 }
-
-
 .animals{
    justify-content: space-around;
     margin: auto;
-    display: flex;
-   
+    display: flex;  
 }
 
 .video{
@@ -66,7 +102,27 @@ dd{
     font-size: 130%;
     padding-top: 3%;
     padding-bottom: 3%;
+}
 
+div.image { 
+    max-width: 5px;
+    max-height: 5px;
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE4LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgdmlld0JveD0iMCAwIDM5Mi43NDcgMzkyLjc0NyIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMzkyLjc0NyAzOTIuNzQ3OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8cGF0aCBkPSJNMzc5LjQ5OCw5MC40NTNsLTQwLjEwNC0xNi4xOGMtMi40NDktMTIuOTQ2LTEyLjI4Ny0yMy4zMTEtMjQuOTQ3LTI2LjUyOGwtMi4xNjktMjQuOTkyDQoJYy0wLjMxLTMuNTY1LTIuNzAyLTYuNjA4LTYuMDkzLTcuNzVjLTMuMzkyLTEuMTQyLTcuMTM4LTAuMTY4LTkuNTQxLDIuNDg0bC0xMC40OTIsMTEuNTcybC02LjQzNy0yMi41MzENCgljLTEuMDcyLTMuNzUyLTQuNDQxLTYuMzg2LTguMzQxLTYuNTIyYy0zLjg5OC0wLjEyMS03LjQ0MywyLjI1OC04Ljc3NCw1LjkyOGwtNTUuNTM2LDE1My4yMQ0KCWMtMzkuOTUsMTAuMzc0LTc0LjgzNSwzNS45MzgtOTYuMjYyLDcwLjcyNGMtMTkuNjI2LDMxLjg2Mi0yNS43MjIsNjguMzY2LTE3LjE2NSwxMDIuNzg2YzUuMDAxLDIwLjExNywxNC40OTYsMzMuMzczLDI0LjIwOSw0Mi4wNjUNCgloLTcuNjM5Yy0wLjA3MiwwLTAuMTQ0LDAuMDAxLTAuMjE2LDAuMDAzYy0zNi4xMzUsMC44ODEtNjkuNjIyLTE5LjY2My04NS4yNTktNTIuMzA3Yy0yLjE0Ny00LjQ4My03LjUyMi02LjM3NS0xMi4wMDUtNC4yMjkNCgljLTQuNDgzLDIuMTQ4LTYuMzc2LDcuNTIyLTQuMjI4LDEyLjAwNWMxOC4zMSwzOC4yMjYsNTcuMDc4LDYyLjU1Nyw5OS4yODYsNjIuNTU3YzAuODQyLDAsMTcxLjgyOSwwLDE3MS44MjksMGM0Ljk3MSwwLDktNC4wMjksOS05DQoJYzAtMjQuMjI2LTE5LjMyMy0zNS4yNjgtMzYuMzc3LTM5LjMyMWM3Ljk3NC0xNS41NDYsOC42NjMtMjkuMjE4LDcuNzU5LTM4LjE2MmwyLjM1Mi0wLjMxNGw1My45NDMsODIuNzEzDQoJYzEuNjYyLDIuNTQ3LDQuNDk3LDQuMDgzLDcuNTM5LDQuMDgzaDMyLjc1NWMzLjI3NywwLDYuMjk2LTEuNzgyLDcuODc5LTQuNjUxYzEuNTg0LTIuODY5LDEuNDgyLTYuMzczLTAuMjY1LTkuMTQ2DQoJYy0wLjM0OC0wLjU1Mi0zNC4xNjYtNTQuMjQ3LTUyLjM0Ni04NC4zMDlWMTQzLjQxNmMyLjY3NiwwLjMwOCw1LjY4MSwwLjQ2Myw4LjMzNSwwLjQ2M2MyNi4xMDksMCw1MC42NjQtMTQuNzMsNjMuODg1LTQwLjg0OA0KCWMwLjAxMS0wLjAyMSwwLjM1LTAuNzI5LDAuNDA0LTAuODY1QzM4Ni4zMzcsOTcuNTU3LDM4NC4xMDgsOTIuMzEyLDM3OS40OTgsOTAuNDUzeiIvPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPC9zdmc+DQo=)
+}
+
+
+.max{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 130%;
+    color: blueviolet;
+    
+}
+.max a{
+    text-decoration: none;
+    font-size: 160%;
+}
+.max a:hover{
+   background-color: rgb(196, 141, 191);
 }
 
 footer{
@@ -80,11 +136,21 @@ table{
     font-size: 150%;
     display: inline-block;
    
-    
 }
 th,td{
-    border: 1px solid black;
+    border: 3px solid rosybrown;
     padding: 25px;
+}
+th:nth-child(even){
+    background-color: rgb(177, 225, 255);
+    opacity: 50%;
+}
+tr:first-child{
+    font-size: 180%;
+}
+tr:nth-last-child(2n){
+    font-size: 150%;
+    background-color: rgb(203, 236, 203);
 }
 
 .tabelle{
@@ -92,10 +158,12 @@ th,td{
     width: 100%;
     padding-top: 2%;
     position: absolute;
-    top: 80%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
+    
 }
+
 .tiere{
     text-align: center;
     color:black;
@@ -107,6 +175,22 @@ th,td{
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+.lexikon{
+    color: rgb(78, 93, 107);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 150%;
+    text-align: center;
+    
+}
+.lexikon a{
+    text-decoration: none;
+    color: rgb(78, 93, 107);  
+}
+.lexikon a:hover{
+    background-color: rgb(163, 233, 230);
+}
+
 
 /*Hintergrundbild
 /---------------*/
@@ -135,8 +219,8 @@ ul{
 }
 div.btn {
     display: flex;
+    position: relative;
     padding: 2%;
-    justify-content: space-around;
     background-color: lemonchiffon;
 }
 
@@ -153,15 +237,24 @@ form{
     flex-basis: 50%;
 }
 
-
-
 label{
     font-family: 'Times New Roman', Times, serif;
     font-size: 130%;
 }
+
 fieldset{
     background-color: lavenderblush;
 }
+
+body.farbe{
+    background-color:#72B3A8;
+}
+nav.color{
+    background-color: #A3FFF0;
+    padding: 5vh;
+}
+
+
 
 
 

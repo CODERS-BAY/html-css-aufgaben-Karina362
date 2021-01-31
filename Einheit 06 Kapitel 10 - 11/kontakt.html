@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <title>Zoo und seine Bewohner</title>
+        <meta charset="UTF-8">
+        <meta name= "viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Zoo">
+        <link rel="stylesheet" href="css/stylesheet.css">
+
+    </head>
+    <body>
+        <header>
+            <h1>ZOO ZOO ZOO</h1>
+            <nav>
+                <a href="index.html">Willkommen</a>
+                <a href="info.html">Unsere Tiere</a>
+                <a href="kontakt.html">Kontakt</a>
+            </nav>
+        </header>
+        <main class="kontakt">
+            <form action="kontakt.html" method="POST">
+                <fieldset>
+                    <legend>Formular für Patenschaften</legend>
+                <div class="flex">
+                    <label for="vorname">Vorname</label>
+                    <input type="text" name="vorname" id="vorname">
+                </div>
+                <div class="flex">
+                    <label for="nachname">Nachname</label>
+                    <input type="text" name="nachname" id="nachname">
+                </div>
+                <div class="flex">
+                    <label for="emailadresse">E-mail</label>
+                    <input type="text" name="emailadresse" id="emailadresse">
+                </div>
+                <div class="flex">
+                    <label for="passwort">Passwort</label>
+                    <input type="password" name="passwort" id="passwort">
+                </div>
+                <div class="flex">
+                    <label for="besuchstag">Besuchstag</label>
+                    <input type="text" name="besuchstag" id="besuchstag">
+                </div>
+                <div class="flex">
+                    <label for="besuchszeit">Besuchszeit</label>
+                    <input type="text" name="besuchszeit" id="besuchszeit">
+                </div>
+                <div class="flex">
+                    <label for="hat es gefallen">Hat es gefallen</label>
+                    <input type="text" name="hat es gefallen" id="hat es gefallen">
+                </div>
+                <div class="flex">
+                    <label for="weiterempfehlung">Weiterempfehlung</label>
+                    <input type="text" name="weiterempfehlung" id="weiterempfehlung">
+                </div>
+            
+               
+                
+                <div class="flex">
+                    <label for="lieblingstier">Lieblingstier</label>
+                    <select name="lieblingstier" id="lieblingstier">
+                        <option value="1">Erdmännchen</option>
+                        <option value="2">Tiger</option>
+                        <option value="3">Seemöwe</option>
+                        <option value="4">Flunder</option>
+                    </select>
+
+                </div>
+                <div class="flex">
+                    <label for="adoption">Adoption</label>
+                    <ul class=kontakt_ul>
+                       <li> <input type="radio" name="adoption" >3 Monate</li>
+                        <li><input type="radio" name="adoption" >6 Monate</li>
+                        <li><input type="radio" name="adoption" >1 Jahr</li>
+
+                    </ul>
+                </div>
+            
+            <div class="flex">
+            <label for= "kommentar">Kommentar</label>
+            <textarea rows="5" cols="20" name="kommentar" id="kommentar"></textarea>
+            </div>
+
+            <div class="flex">
+                <label for="besucherinfo">Besucherinfo</label>
+                <select name="besucherinfo" id="besucherinfo">
+                    <option value="1">Familienausflug</option>
+                    <option value="2">Allein unterwegs</option>
+                    <option value="3">Gruppenausflug</option>
+                    <option value="4">Ausflug mit Freunden</option>
+                    <option value="5">was anderes...</option>
+                </select>
+               
+        
+            </fieldset>
+         </form>
+          
+         <div class="btn">
+            <button type="submit">Absenden</button>
+            <button type="reset">Reset Formular</button>
+            <button type="button">Button</button>
+        </div>
+         
+        
+        </main>
+        <hr>
+        <footer>
+            <p>Datenschutz</p>
+            <p>Impressum</p>
+        </footer>
+    </body>
+</html>
