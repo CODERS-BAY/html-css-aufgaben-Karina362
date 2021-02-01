@@ -1,3 +1,6 @@
+/*-----------------------------------------------
+ Allgemeine Bestimmung
+------------------------------------------------*/
 body{
     font-family: 'Cinzel', serif;
     font-family: 'Kalam', cursive;
@@ -9,10 +12,28 @@ h1{
     font-family: 'Times New Roman', Times, serif;
     font-size: 250%;
     letter-spacing: 10px;
-    text-shadow: rgb(158, 212, 233) 6px 3px 0px;
-    
-    
+    text-shadow: rgb(158, 212, 233) 6px 3px 0px;    
 }
+
+footer{
+    text-align: center;
+}
+
+
+/*------------------------------------------ 
+  Index.html
+--------------------------------------------*/
+.IntroBild{
+    min-height: 60vh;
+    background: url(../bilder/wiese.jpg);
+    background-size: cover;
+    background-position: center; 
+}
+
+h1::first-letter{
+    font-size: 220%;
+}
+
 .rotate{
     animation: rotation 2s;
 }
@@ -30,25 +51,6 @@ h1{
       transform: rotate(359deg);
     }
 } 
-
-
-h1::first-letter{
-    font-size: 220%;
-}
-.IntroBild{
-    max-width: 600px;
-   
-}
-
-img.green{
-    
-    min-height: 60vh;
-    background: url(bilder/green.jpg);
-    background-size: cover;
-    background-position: center;
-    width: 355%;
-   
-}
 
 nav{
     text-align: center;
@@ -68,6 +70,15 @@ nav a{
     font-size: 180%;
     color: black;    
 }
+
+.Farbverlauf{
+    background: linear-gradient(rgb(236, 236, 184), rgb(223, 223, 18),rgb(168, 168, 69), rgb(92, 92, 22));
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(236, 236, 184)), color-stop(rgb(223, 223, 18)),color-stop(rgb(168, 168, 69)), to(rgb(92, 92, 22)));
+    background: -o-linear-gradient(rgb(236, 236, 184), rgb(223, 223, 18),rgb(168, 168, 69), rgb(92, 92, 22));
+    background: linear-gradient(rgb(236, 236, 184), rgb(223, 223, 18),rgb(168, 168, 69), rgb(92, 92, 22));
+
+}
+
 section.welcome{
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
@@ -90,9 +101,7 @@ section.säugetier {
     font-family: 'Times New Roman', Times, serif;
     font-size: 130%;
 }
-/*.säugetier dd{
-       
-}*/
+
 .säugetier dt::first-letter{
     font-size: 200%;
     color: lightcoral;
@@ -128,7 +137,6 @@ dt{
 }
 
 dd{
-    
     text-align: left;
     max-width: 490px;    
 }
@@ -141,11 +149,9 @@ dd::first-line{
     font-family: 'Special Elite', cursive; 
 }
 .animals{
-   justify-content: space-around;
+    justify-content: space-around;
     margin: auto;
-    display: flex;  
-    
-   
+    display: flex;        
 }
 
 .video{
@@ -163,6 +169,176 @@ div.image {
 }
 
 
+
+/*-------------------------------------------------
+ Info.html
+---------------------------------------------------*/
+.background{
+    background: url(../bilder/hintergrund.png);
+    background-position: center;
+    background-size: cover;
+    /* max-width: 50%; */
+    opacity: 80%;
+    margin: auto;
+    
+}
+table{
+   
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 100%;  
+    width: 100%;
+}
+th,td{
+    border: 3px solid rosybrown;
+    padding: 25px;
+}
+th:nth-child(even){
+    background-color: rgb(179, 208, 226);
+    opacity: 50%;
+}
+
+tr:first-child{
+    font-size: 180%;
+    font-weight: bold;
+    background-color: rgb(179, 208, 226);
+}
+tr:nth-last-child(2n){
+    font-size: 150%;
+    background-color: rgb(179, 208, 226);
+    /*opacity: 50%;*/
+}
+
+tr:nth-last-child(3n){
+    font-size: 150%;
+    background-color: rgb(209, 187, 214);
+    /*opacity: 50%;*/
+}
+
+.tabelle{
+    /* width: 100%; */
+    padding: 2%;
+    opacity: 100%;
+    
+    
+   /*border: 5px solid black;
+    box-shadow: 50px 50px 40px  grey;*/
+    
+}
+
+.tiere{
+    text-align: center;
+    color: rgb(17, 15, 15);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 170%;
+    padding: 2%;
+    background-color: rgba(255,255,255,.75);
+}
+.lexikon {
+    color: rgb(10, 10, 10);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 150%;
+    text-align: center;
+    padding: 2%;
+    background-color: rgba(255,255,255,.75);
+    
+}
+.lexikon a{
+    text-decoration: none;
+    color: rgb(31, 32, 34); 
+    text-align: center; 
+}
+.lexikon a:hover{
+    background-color: rgb(163, 233, 230);
+}
+
+}
+
+/*Hintergrundbild*/
+.background img{
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 98vw;
+  margin: 0;
+ 
+  
+}
+
+
+/*----------------------------------------------------
+  Kontakt
+-----------------------------------------------------*/
+.flex{
+    justify-content: space-around;
+    margin: auto;
+    display: flex;
+    width: 50%;
+    padding: 3%;
+    
+}
+.kontakt_ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.btn {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 50%;
+    margin: auto;
+    
+}
+.btn button {
+    margin-top: 5%;;
+    padding: 0% 8% 0% 8%;
+    background-color: lemonchiffon;
+    font-family: 'Kalam', cursive;
+    font-size: 100%;
+    color: rgb(184, 95, 184); 
+    
+    
+}
+
+.kontakt{
+    
+    /* justify-content: center; */
+    
+    /*width: 600px;*/
+}
+
+.form{
+    width: 100%;
+    padding-top: 3%;  
+    margin-bottom: 5%;  
+    /* flex: 0 1 auto;  */
+   
+    
+   
+}
+
+
+.flex > *{
+    flex-basis: 50%;
+}
+
+label{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 130%;
+}
+
+fieldset{
+    background-color: lavenderblush;
+    width: 100%;
+    max-width: 50%;
+    margin: auto;
+    
+}
+
+
+/*----------------------------------------------
+ Max.html
+-----------------------------------------------*/
 .max{
     font-family: 'Times New Roman', Times, serif;
     font-size: 130%;
@@ -178,158 +354,6 @@ div.image {
    text-decoration: underline;
 }
 
-footer{
-    text-align: center;
-}
-
-
-table{
-   
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 150%;
-    display: inline-block;
-   
-}
-th,td{
-    border: 3px solid rosybrown;
-    padding: 25px;
-}
-th:nth-child(even){
-    background-color: rgb(177, 225, 255);
-    opacity: 50%;
-}
-tr:first-child{
-    font-size: 180%;
-    font-weight: bold;
-}
-tr:nth-last-child(2n){
-    font-size: 150%;
-    background-color: rgb(203, 236, 203);
-}
-
-.tabelle{
-    text-align: center;
-    width: 80%;
-    padding: 2%;
-    margin: 5%;
-    position: absolute;
-    top: 70%;
-    left: 45%;
-    transform: translate(-50%, -50%);
-    border: 5px solid black;
-    box-shadow: 50px 50px 40px  grey;
-    
-}
-
-.tiere{
-    text-align: center;
-    color:black;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 150%;
-    padding-top: 3%;
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.lexikon{
-    color: rgb(78, 93, 107);
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 150%;
-    text-align: center;
-    
-}
-.lexikon a{
-    text-decoration: none;
-    color: rgb(78, 93, 107);  
-}
-.lexikon a:hover{
-    background-color: rgb(163, 233, 230);
-}
-
-
-/*Hintergrundbild
-/---------------*/
-.background img{
-  background-position: center;
-
-  background-size: cover;
-  height: 100vh;
-  width: 98vw;
-  margin: 0;
-  opacity: 0.300;
-  
-}
-.flex{
-    justify-content: space-around;
-    margin: auto;
-    display: flex;
-    width: 50%;
-    padding: 3%;
-    
-}
-.kontakt_ul{
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-.btn {
-   /* position: relative;*/
-    display: flex;
-    width:300px;
-    margin-left: 90%;
-    margin-left: 90%;
-    
-}
-.btn button {
-    
-    margin-left: 40%;
-    margin-right: 40% ;
-    width: 50%;
-    padding: 1%;
-    padding: 0% 8% 0% 8%;
-    background-color: lemonchiffon;
-    font-family: 'Kalam', cursive;
-    font-size: 100%;
-    color: rgb(184, 95, 184);
-   
-}
-
-
-/*main {
-    margin-left: 20%;
-    margin-right:20%;
-}*/
-
-.kontakt{
-   
-    width: 600px;
-}
-
-form{
-    display: relative;
-    width: 200%;
-    margin-left: 80%;
-   
-    padding-top: 3%;  
-    margin-bottom: 20%;     
-}
-
-
-.flex > *{
-    flex-basis: 50%;
-}
-
-label{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 130%;
-}
-
-fieldset{
-    background-color: lavenderblush;
-}
-
 body.farbe{
     background-color:#72B3A8;
    
@@ -339,20 +363,14 @@ nav.color{
     padding: 5vh;
 }
 
-
-.grafik{
-   
-   border:3px solid tomato;
-   opacity: 20%;
-   display: block;
-   margin-left: auto;
-   margin-right: auto;
-   width: 50%;
-   background-image: url(../bilder/grafik.jpg);
+.farbe{
+   background-image: url(../bilder/blue.jpg);
    background-attachment: fixed;
-   background-repeat: no-repeat;
+   background-repeat: repeat;
+   background-position: center;
+   background-blend-mode:soft-light; 
+   
 }
-
 
 footer.blau{
     background-color: #416660;
@@ -360,59 +378,63 @@ footer.blau{
     padding-bottom: 1%;
     text-align: center;
 }
-.grafik p{
-   
+
+.Teil1{
     font-family: 'Special Elite', cursive;
+    color: white;
+    text-shadow: 10px 10px 10px rgb(19, 18, 18);
     font-size: 180%;
-    position: fixed;
-   /* word-spacing: 3px;*/
+    letter-spacing:5%;
+    word-spacing: 10%;
+    line-height: 150%;
     font-weight: bold;
     font-variant: small-caps;
     max-width: 900px;
     border:3px solid rgb(23, 7, 119);
     border-radius: 5% 10% 30% 5%;
-    padding:5%;
-    position: relative;
-    top: 40%;
-    left: 30%;
-    right: 30%;
-   /* transform: translate(-50%,-130%);*/
-  
-    
+    padding:3%;
+    margin: 5%;    
 }
-p.Teil2{
+
+.Teil2{
     font-family: 'Special Elite', cursive;
     font-size: 180%;
-    position: fixed;
-   /* word-spacing: 3px;*/
+    color: rgb(12, 11, 11);
+    text-shadow: 5px 5px 5px rgb(228, 218, 218);
+    word-spacing: 3px;
+    letter-spacing:5%;
+    word-spacing: 10%;
+    line-height: 150%;
     font-weight: bold;
     font-variant: small-caps;
     max-width: 600px;
     border:3px solid rgb(23, 7, 119);
-    position: relative;
-    top: 40%;
-    left: 30%;
-    right: 30%;
-   /* transform: translate(70%,-110%);*/
-    
+    border-radius: 5% 10% 30% 5%;
+    padding:3%;
+    margin-left: 50%;    
 }
+
 .grafik p::first-letter{
     font-size: 200%;
     font-family: 'Kalam', cursive;
 }
+
 h1.link{
     font-family: 'Special Elite', cursive; 
 }
 
 .Iconliste{
-    text-align: left;
-    margin: 0% 40% 0% 40%;
-   
-
+    text-align: center;
+    margin: 10% 40% 0% 40%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .Hundeknochen{
+    flex: 0 0 50%;
     list-style-image: url("../bilder/dog.png");
+    text-align: left;
   
 }
 
