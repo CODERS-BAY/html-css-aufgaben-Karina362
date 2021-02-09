@@ -1,0 +1,221 @@
+/*----------------------------------------------------
+ Allgemein
+ ---------------------------------------------------*/
+
+
+body{
+    font-family: 'Forum', cursive;
+ }
+h1{
+    text-align: center;
+    margin-top: 5%;
+}
+
+.icon{
+    display: flex;
+    justify-content: space-around;
+}
+
+.bild1{
+    flex: 0 1 auto;
+    align-items: center;  
+}
+
+nav{
+    background: linear-gradient(#e2e0e0, #606063);
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    margin: auto;
+    width: 80%;
+    
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    
+    
+}
+ li a{
+    text-decoration: none;
+    color: white;
+    font-size: 170%;
+    font-weight: bold;
+}
+
+
+/*-----------------------------------------------------
+ Index.html
+ -----------------------------------------------------*/
+
+
+.display{
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+    width: 80%;
+    margin: auto;  
+     
+}
+.Text{
+    font-size: 250%;
+}
+
+.bildlinks{
+    float: left;
+    margin-right: 2rem;
+}
+
+.nr1{
+    font-size: 120%;
+    color: rgb(83, 179, 179);
+    font-family: 'Liu Jian Mao Cao', cursive;
+}
+
+.nr2{
+    font-size: 100%;
+    color: plum;
+    font-family: 'Liu Jian Mao Cao', cursive;
+}
+.nr3{
+    font-size: 90%;
+    color: rgb(64, 65, 20);
+    font-family: 'Liu Jian Mao Cao', cursive;
+}
+.nr4{
+    font-size: 80%;
+    color: rgb(160, 221, 180);
+    font-family: 'Liu Jian Mao Cao', cursive;
+}
+.nr5{
+    font-size: 90%;
+    color: rgb(0, 97, 161);
+    font-family: 'Liu Jian Mao Cao', cursive;
+}
+.nr6{
+    font-size: 110%;
+    color: rgb(117, 25, 25);
+    font-family: 'Liu Jian Mao Cao', cursive;
+}
+.nr7{
+    font-size: 130%;
+}
+
+.B1{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5%;  
+    margin-top: 5%;
+}
+
+.btn1{
+    background-color: #343634; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 180%;
+    
+}
+
+.eins{
+    color: rgb(19, 18, 18);
+}
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    font-size:160%;
+}
+
+
+/*-----------------------------------------------------
+ Unikate.html
+ -----------------------------------------------------*/
+
+.unikat{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "kopf kopf kopf kopf"
+                         "navi navi navi navi" 
+                         "inhalt inhalt inhalt inhalt"
+                         "inhalt2 inhalt2 inhalt2 inhalt2" 
+                         "fuss fuss fuss fuss";
+    align-content: space-between;
+    row-gap: 2%;
+   
+    
+}
+.kopf{
+    grid-area: kopf;
+}
+
+.navi{
+    grid-area: navi; 
+}
+
+.navi ul{
+    margin-top: 0;
+    padding-top: 3%;
+    padding-bottom: 2%;
+       
+}
+
+
+.inhalt{
+   grid-area: inhalt; 
+   grid-column: 2/4; 
+   grid-row: 3/4;
+   margin: 5% 10% auto auto; 
+   max-width: 100%;
+   
+}
+
+.text{
+    grid-area: inhalt;
+    grid-column: 1/2;
+    grid-row: 3/4;
+    width: 80%;
+    margin: 5% auto auto 10%;
+    -webkit-column-width: 20rem;
+    column-width: 20rem;
+    font-size: 160%;
+
+}
+
+
+
+.inhalt2{
+   grid-area:inhalt; 
+   grid-column: 1/2; 
+   grid-row: 4/5;
+   margin: 5% 10% auto 10%; 
+   max-width: 100%;
+   margin-top: 5%;
+}
+
+.text2{
+    grid-area: inhalt;
+    grid-column: 2/5;
+    grid-row: 4/5;
+    width: 75%;
+    margin: 5% 15% auto 15%;
+    -webkit-column-width: 20rem;
+    column-width: 20rem;
+    font-size: 160%;
+}
+  
+
+.fuss{
+    grid-area: fuss;
+    
+}
+
