@@ -1,0 +1,257 @@
+/*------------
+index.html
+-------------*/
+
+#myVideo{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+.busIcon{
+    position:absolute;
+    top: 70%;
+    width: 200px;
+    left: 45%;
+    animation: spring 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes spring { 
+    0% { transform: scale(1) translateY(0); }
+    10% { transform: scale(1.2, 0.6); }
+    30% { transform: scale(0.8, 1.1) translateY(-10px); }
+    50% { transform: scale(1) translateY(0); }
+    100% { transform: translateY(0); }
+  }
+
+/*------------
+start.html
+-------------*/
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "title title title"
+                         "title title title"
+                         "navi inhalt side" 
+                         "navi inhalt side"
+                         "navi inhalt side"
+                         "fuss fuss fuss";
+    align-content: space-between;
+    row-gap: 2%;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.title{
+    grid-area: title;
+    text-align: center;
+    background-image: url("../bilder/underwater.jpg");
+    background-size: cover;
+    height: 500px;
+}
+
+.navi{
+    grid-area: navi;
+    margin-top: 1%;
+    border-right: cadetblue 5px solid;  
+}
+.side{
+    grid-area: side;
+    font-size: 150%;
+    text-align: left;
+    margin-top: 1%;
+    margin-right: 10%;
+    border-left: cadetblue 5px solid;
+}
+
+.fuss{
+    grid-area: fuss;
+    text-align: center;
+
+}
+
+h1{
+    margin-top: 8%;
+}
+
+h2{
+    text-decoration: underline;
+}
+
+nav ul{
+    list-style: none;
+   
+    
+}
+nav a {
+    text-decoration: none;
+    font-size: 180%;
+    color: black;
+    
+}
+nav a:hover{
+    color: rgb(78, 78, 202);
+    font-size: 200%;
+}
+
+.inhalt{
+    grid-area: inhalt;
+    margin-top: 1%;
+    text-align: center;
+}
+
+.intro{
+    padding-left: 3%;
+}
+.text{
+    font-size: 100%;
+    text-align: left;
+    margin-top: 1%;
+    margin-right: 3%;
+    padding-left: 3%;
+    
+}
+.side img{
+    margin-top: 5%;
+    opacity: 0.7;
+}
+
+.me{
+    margin-top: 15%;
+    margin-left: 5%;
+}
+
+.about{
+    margin-left: 10%;
+    margin-right: 5%;
+    margin-top: 10%;
+    font-size: 160%;
+
+}
+
+.palm{
+    width: 20%;
+    text-align: center;
+    margin-left: 40%;
+}
+
+.social-media{
+    text-align: center;
+    border: 1px black solid;
+    background-color: cadetblue;
+    margin: 5% 5% 5% 5%;
+    padding: 1% 1%;
+}
+
+.facebook{
+    width: 3%;  
+}
+.facebook:hover{
+    opacity: 0.7;
+}
+
+.insta{
+    width: 3%;
+}
+.insta:hover{
+    opacity: 0.7;
+}
+
+.youtube{
+    width: 3%;
+}
+.youtube:hover{
+    opacity: 0.7;
+}
+
+
+/*------------
+detail.html
+-------------*/
+
+.ebene1{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 5%;
+    justify-content: space-around;
+
+
+}
+
+.italien2{
+    max-width: 30%;
+    font-size: 180%; 
+
+}
+.italien3{
+    font-size: 180%; 
+    max-width: 30%;  
+}
+
+.a{
+    text-decoration: none;
+}
+.title1{
+    color: black;
+    text-align: center;
+    margin-top: 5%;
+    
+}
+.title2{
+    text-decoration: none;
+    text-align: center;
+    margin-top: 3%;
+   
+}
+
+.mini{
+    max-width: 100%;
+    margin-bottom: 10%;
+}
+
+.fels{
+    max-width: 100%;
+    margin-top: 3%;
+    
+}
+
+h2.cucina{
+    text-align: center;
+    margin-top: 3%;
+    text-decoration: none;
+}
+
+.orangen{
+    margin-top: 8%;
+    margin-left: 6%;
+    /*transform: skewX(20deg);*/
+    max-width: 80%;
+}
+.aboutFood{
+    max-width: 40%;
+    margin-top: 5%;
+    font-size: 180%;
+}
+.aboutFood::first-letter{
+    font-size: 250%;
+}
+
+.pasta{
+    margin-top: 5%;
+    
+}
+
+.ebene2{
+    display: flex;
+    justify-content: space-evenly;
+}

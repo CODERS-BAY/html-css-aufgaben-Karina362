@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <style>
+        form {
+            background-color: rgba(255, 255, 255, .75);
+            flex-basis: 100%;
+            /*animation: blink-animation 1s steps(5, start) infinite;
+        -webkit-animation: blink-animation 1s steps(5, start) infinite;*/
+        }
+
+        @keyframes blink-animation {
+            to {
+                visibility: hidden;
+            }
+        }
+
+        @-webkit-keyframes blink-animation {
+            to {
+                visibility: hidden;
+            }
+        }
+
+        #ausgabe {
+            flex-basis: 100%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        @keyframes moveout {
+            0% {
+                opacity: 1;
+                transform: scale(1) rotate(0deg);
+            }
+            100% {
+                opacity: 0;
+                transform: scale(0) rotate(20deg);
+            }
+        }
+        @keyframes movein {
+            0% {
+                opacity: 0;
+                transform: scale(0) rotate(20deg);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1) rotate(0deg);
+            }
+        }
+        .classOut {
+            animation:  moveout 5s ease;
+        }
+        .classIn {
+            animation:  movein 5s ease;
+        }
+        section {
+            min-height: 100vh;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .first {
+            background-image: url('https://images.unsplash.com/photo-1519658422992-0c8495f08389?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1037&q=80');
+            background-position: center;
+            background-size: cover;
+        }
+
+        .second {
+
+            background-image: url('https://images.unsplash.com/photo-1567254790685-6b6d6abe4689?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjE3MzYxfQ&auto=format&fit=crop&w=967&q=80');
+            background-position: center;
+            background-size: cover;
+        }
+
+        .third {
+
+            background-image: url('https://images.unsplash.com/photo-1563177116-acb0c14fa984?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80');
+            background-position: center;
+            background-size: cover;
+        }
+
+
+    </style>
+</head>
+<body>
+<main>
+    <section id="changeMe" class="container-fluid first">
+        <form id="maximalerWert" class="p-5">
+            <p>In diesem Spiel sollst du eine Zahl erraten zwischen 0 und x.<br>Gib an welche Zahl x sein soll.</p>
+            <div class="form-group">
+                <label for="maxZufallID">Maximaler Wert in dem eine zufällige Zahl gewählt werden soll</label>
+                <input type="number" class="form-control" id="maxZufallID" aria-describedby="maxZufallID"
+                       placeholder="Enter Number">
+            </div>
+            <button type="button" id="buttonMaxZufall" onclick="zufallsZahlFunction()" class="btn btn-primary">Maximalen
+                Wert eingeben
+            </button>
+        </form>
+
+        <form id="versuche" class="d-none m-5 p-5">
+            <div class="form-group">
+                <label for="anzahlVersuche">Wieviele Versuche möchtest du spielen</label>
+                <input type="number" class="form-control" id="anzahlVersuche" aria-describedby="anzahlVersuche"
+                       placeholder="Enter Number">
+            </div>
+
+            <button type="button" id="buttonAnzahlVersuche" onclick="anzahlVersucheFunction()"
+                    class="btn btn-primary">Anzahl der Versuche
+            </button>
+        </form>
+
+        <form id="zahlenraten" class="d-none m-5 p-5">
+            <div class="form-group">
+                <label for="gerateneZahl">Rate die Zahl</label>
+                <input type="number" class="form-control" id="gerateneZahl" aria-describedby="emailHelp"
+                       placeholder="Enter Number">
+            </div>
+
+            <button type="button" id="buttonZahlRaten" onclick="zahlRatenFunction()" class="btn btn-primary">Rate
+                Zahl
+            </button>
+        </form>
+        <button type="button" id="ausgabe" onclick="myMove()" class="btn">Schau mal</button>
+
+    </section>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+
+
+<script>
+    let counter = 0;
+    let zufallsZahl = 0;
+    let gerateneZahl = 0;
+
+
+    let textfeld = document.getElementById('ausgabe');
+    let buttonTag = document.getElementById("buttonZahlRaten");
+    let anzahlDerVersuche = 0;
+
+
+    var id = null;
+
+    function myMove() {
+        var elem = document.getElementById("pic");
+        console.log(elem);
+        var pos = 0;
+        clearInterval(id);
+        id = setInterval(frame, 10);
+
+        function frame() {
+            if (pos == 140) {
+                clearInterval(id);
+            } else {
+                pos++;
+                elem.style.top = pos + 'px';
+                elem.style.left = pos + 'px';
+            }
+        }
+    }
+
+    //FUNKTION 1:
+    // die obergrenze aus dem Input holen und abspeichern
+    // die erste form verstecken
+    // die zweite form einblenden
+    // das Hintergrundbild ändern
+    function zufallsZahlFunction() {
+
+        //.value returns String
+        zufallsZahl = document.getElementById('maxZufallID').value;
+        zufallsZahl = Number(zufallsZahl);
+
+        //Math.random
+        zufallsZahl = Math.floor(Math.random() * (zufallsZahl - 1));
+        //---------------------------------------
+        document.getElementById("maximalerWert").classList.add('classOut');
+        document.getElementById("versuche").classList.add('d-none');
+        //---------------------------------------
+        document.getElementById("versuche").classList.remove('d-none');
+        document.getElementById("versuche").classList.add('classIn');
+        //---------------------------------------
+        document.getElementById('changeMe').classList.remove('first');
+        document.getElementById('changeMe').classList.add('second');
+
+    }
+
+    //FUNKTION 2:
+    // die Anzahl der Versuche aus dem Input holen und abspeichern
+    // die zweite form verstecken
+    // die dritte form einblenden
+    // das Hintergrundbild ändern
+    function anzahlVersucheFunction() {
+
+        anzahlDerVersuche = Number(document.getElementById("anzahlVersuche").value);
+        //---------------------------------------
+        document.getElementById('versuche').classList.add('d-none');
+        //---------------------------------------
+        document.getElementById("zahlenraten").classList.remove("d-none");
+        //---------------------------------------
+        document.getElementById('changeMe').classList.remove('second');
+        document.getElementById('changeMe').classList.add('third');
+
+    }
+
+    //FUNKTION 3:
+    // die geratene Zahl aus dem Input holen und vergleichen
+    // Ergebnis liefern
+    function zahlRatenFunction() {
+        gerateneZahl = Number(document.getElementById("gerateneZahl").value);
+
+        if (zufallsZahl < gerateneZahl) {
+
+            textfeld.innerHTML +=
+                '<span class = "p-3 bg-info">' + gerateneZahl + 'ist zu groß</span>';
+            counter++;
+
+        } else if (zufallsZahl > gerateneZahl) {
+
+            textfeld.innerHTML +=
+                '<span class = "p-3 bg-info">' + gerateneZahl + 'ist zu klein</span>';
+            counter++;
+
+        } else {
+
+            textfeld.innerHTML +=
+                '<span class = "p-3 bg-succes">gewonnen</span>';
+            buttonTag.disabled = true;
+            buttonTag.innerText = "gewonnen";
+
+        }
+        if (counter === anzahlDerVersuche) {
+            buttonTag.disabled = true;
+            buttonTag.innerText = "verloren";
+            textfeld.innerHTML +=
+                '<span class = "p-3 bg-warning">verloren</span>';
+        }
+        //wenn geratene zahl > zufallsZahl
+        // wenn geratene zahl < zufallsZahl -->funktion verloren
+        //wenn anzahl versuche === counter
+
+    }
+
+</script>
+
+</body>
+</html>

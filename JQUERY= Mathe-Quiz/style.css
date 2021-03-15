@@ -1,0 +1,19 @@
+.grid {
+    display: grid;
+    justify-items: stretch;
+    align-items: center;
+    grid-template-columns: auto auto auto;
+    margin: 10% 0;
+}
+.container {
+    margin: auto;
+    text-align: center;
+}
+.btn-quiz {
+    border: 1px solid #ccc;
+    width: 100%;
+    background-color: cadetblue;
+    color: #cccccc;
+    font-weight: bold;
+    cursor: pointer;
+}
